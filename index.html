@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>3W Map - Uganda</title>
+  <link href="./css/bootstrap.min.css" rel="Stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="./css/uganda.map.css" rel="Stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+   <script src="https://unpkg.com/leaflet-image@latest/leaflet-image.js"></script>
+   <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.2/jspdf.plugin.autotable.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+   <script src="./js/saveSvgAsPng.js"></script>
+   <script src="./js/pdf.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+
+      <div class="top-panel col-md-8 col-sm-8" style="top: 10px; left: 250px;">
+          <div class="head" style="width: 200px;">
+              <p id="d3-map-info">To Filter: Use Left Menu <br/>
+                  For Info: Click Map Feature</p>
+          </div>
+      </div>
+
+    <div class="top-panel col-md-8 col-sm-8">
+
+
+
+                <div class="head col-md-2 col-sm-2">
+                  <p class="custom-count-header" style="height:63.2px; font-size: 16px;"><br>Districts </p>
+                  <p id="district-count" class="custom-count">0</p>
+                </div>
+                <div class=" head col-md-2 col-sm-2">
+                  <p class="custom-count-header" style="height:63.2px; overflow-y: auto;">Refugee sites <small style="line-height: 0.1%; font-size: 10px;"><br>entry points, transit centres, reception centres and settlements</small> </p>
+                  <p id="settlement-count" class="custom-count">0</p>
+                </div>
+                <div class="head col-md-2 col-sm-2">
+                  <p class="custom-count-header"  style="height:63.2px;  font-size: 16px;ithub"><br>Partners </p>
+                  <p id="agency-count" class="custom-count">0</p>
+                </div>
+
+
+                </div>
+
+                <div class="panel-right row-md-8">
+
+                    <div class="head" style="width: auto;">
+                        <p id="d3-map-info" style="font-weight: bold;font-size: 16px;">Partners involved in the response</p>
+                    </div>
+
+                  <div class="row" style="margin: 10px 0px 0px 0px;">
+                    <div class="head row-md-8">
+                      <p class="custom-count-header">UN agencies </p>
+                      <p id="unAgency-count" class="custom-count">0</p>
+                    </div>
+                  </div>
+                  <div class="row" style="margin: 10px 0px 0px 0px;">
+                    <div class="head row-md-8">
+                      <p class="custom-count-header">Government </p>
+                      <p id="ipAgency-count" class="custom-count">0</p>
+                    </div>
+                  </div>
+                  <div class="row" style="margin: 10px 0px 0px 0px;">
+                    <div class="head row-md-8">
+                      <p class="custom-count-header">NGOs </p>
+                      <p id="opAgency-count" class="custom-count">0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  <div class="row" style="margin:0px;">
+      <!--<div class="bottom-panel col-md-12" style="padding: 0 5px;">  <span class="glyphicon glyphicon-menu-down"></span>-->
+      <div class="left-panel col-md-2">
+
+        <div class="menu-panel">
+            <div class="counter-panel">
+                <div class="row" style="margin:0px;">
+                    <div class="title-panel col-md-12">
+                        <div id="header-text">
+                            <p><span>>Who does,</span></br>
+                                <span>>What,</span></br>
+                                <span>>Where (3W)</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="list-container">
+              <div class="col-md-12">
+                <p class="custom-list-header">Districts <i class="glyphicon glyphicon-chevron-down"></i></p>
+                <div id="district-list" class="custom-list"></div>
+              </div>
+              <div class="col-md-12">
+                <p class="custom-list-header">Refugee sites <small style="color: #52595e; font-weight: bold; font-style: normal; font-family: Roboto,sans-serif; font-size: 10px"><br>entry points, transit centres, reception<br> centres and settlements</small> <i class="glyphicon glyphicon-chevron-down"></i></p>
+                <div id="settlement-list" class="custom-list"></div>
+              </div>
+              <div class="col-md-12">
+                <p class="custom-list-header">Sectors <i class="glyphicon glyphicon-chevron-down"></i></p>
+                <div id="sector-list" class="custom-list"></div>
+              </div>
+              <div class="col-md-12">
+                <p class="custom-list-header">Partners <i class="glyphicon glyphicon-chevron-down"></i></p>
+                <div id="agency-list" class="custom-list"></div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+      <div class="right-panel col-md-12 col-sm-12">
+        <div id="d3-map-container">
+          <div style="background:#f5f5f5;height:24px; position:absolute; top:0px; width:100%;">
+            <p id="d3-map-refresh">Clear all</p>
+            <p id="d3-map-make-pdf">Download PDF</p>
+            <div id="legend"></div>
+          </div>
+          <div id="d3-map-wrapper"></div>
+        </div>
+      </div>
+
+
+  </div>
+
+  <script src="./js/d3.v3.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/topojson.v1.min.js"></script>
+  <script src="./js/queue.v1.min.js"></script>
+  <script src="./js/uganda.map.js"></script>
+
+<script type="text/javascript">
+</script>
+
+</body>
+</html>

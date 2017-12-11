@@ -1,0 +1,93 @@
+Name,Abb,Actor_ID,Actor_Type
+ACAV,ACAV,1,OP
+Action Africa Help ,AAH,2,OP
+Action Against Hunger ,ACF,3,OP
+Adventist Development and Relief Agency ,ADRA,4,OP
+Africa ministry revival,Africa ministry revival,5,OP
+African Initiatives for Relief and Development ,AIRD,6,OP
+Agency for Cooperation and Research in Development  ,ACORD,7,OP
+Africa Humanitarian Action,AHA,8,OP
+American Refugee Committee ,ARC,9,OP
+Care and Assistance for Forced Migrants,CAFOMI,10,OP
+Care International ,CARE,11,OP
+Caritas  ,Caritas,12,OP
+Cesvi Onlus - Cooperazione e Sviluppo ,CESVI,13,OP
+Community Empowerment for Rural Development ,CEFORD,14,OP
+Concern World Wide ,CWW,15,OP
+Convention on the Rights of the Child,CRC,16,OP
+DanChurchAid ,DCA,17,OP
+Danish Refugee Council ,DRC,18,OP
+DHO,DHO,19,OP
+Finn Church Aid ,FCA,20,OP
+Finnish Refugee Council ,FRC,21,OP
+Food for the Hungry ,FH,22,OP
+"Government , Office of the Prime Minister ",OPM,23,IP
+Hebrew Immigrant Aid Society (HIAS),HIAS,24,OP
+Here is Life,Here is Life,25,OP
+Humanitarian Initiative Just Relief Aid ,HIJRA,26,OP
+Interaid Uganda ,IAU,27,OP
+International Aid Services ,IAS,28,OP
+International Committee of the Red Cross,ICRC,29,OP
+International Federation of Red Cross,IFRC,30,OP
+International organization for migration ,IOM,31,IP
+International Rescue Committee,IRC,32,OP
+Lutheran World Federation ,LWF,33,OP
+Malteser International ,MI,34,OP
+MSF ,MSF,35,OP
+Medical Teams International ,MTI,36,OP
+Mercy Corps,MC,37,OP
+Norwegian Refugee Council ,NRC,38,OP
+NSAMIZI,NSAMIZI,39,OP
+Obadiah Brothers Canada ,OBK,40,OP
+Oxfam ,OXFAM,41,OP
+Peace Winds Japan,Peace Wind,42,OP
+Peter C. Alderman Foundation ,PCAF,43,OP
+Plan International Uganda ,PLAN,44,OP
+Real Medicine Foundation ,RMF,45,OP
+Refugee Law Project,RLP,46,OP
+Rural Initiative for Community Empowerment ,RICE,47,OP
+Samaritan's Purse ,SP,48,OP
+Save the Children ,SCI,49,OP
+TCNs Ugandan nationals,TCNs Ugandan nationals,50,OP
+The Association of Volunteers in International Service ,AVSI,51,OP
+The Israel Forum for International Humanitarian Aid,IsraAID,52,OP
+Touch Africa ,TAN,53,OP
+Transcultural Psychosocial Organization ,TPO,54,OP
+Tutapona ,TUTAPONA,55,OP
+Uganda Government,Government_,56,IP
+Uganda Red Cross,URC,57,OP
+Ugandan Red Cross Society ,URCS,58,OP
+Ugandan Refugee and Disaster Management Council ,URDMC,59,OP
+United Nation Food Assistant Organization ,FAO,60,UN
+United Nation High Commissioner for Refugees ,UNHCR,61,UN
+United Nations Entity for Gender Equality and the Empowerment of Women ,UNWOMEN,62,UN
+United Nations International Children's Emergency Fund ,UNICEF,63,UN
+United Nations Population Fund ,UNFPA,64,UN
+Volunteer Efforts for Development Concerns ,VEDCO,66,OP
+War Child Canda ,WCC,67,OP
+War Child Holland ,WCH,68,OP
+Water Mission International ,WMI,69,OP
+Welthungerhilfe,WHH,71,OP
+Windle Trust Uganda ,WTU,72,OP
+World Food Programme ,WFP,73,IP
+World Health Organization ,WHO,74,IP
+World Vision International ,WVI,75,OP
+ZOA- Uganda ,ZOA,76,OP
+Arua - District Local Government ,Arua - District Local Government ,77,IP
+Lamwo - District Local Government ,Lamwo - District Local Government ,78,IP
+Hoima - District Local Government ,Hoima - District Local Government ,79,IP
+Isingiro - District Local Government ,Isingiro - District Local Government ,80,IP
+Kamwenge - District Local Government ,Kamwenge - District Local Government ,81,IP
+Koboko - District Local Government ,Koboko - District Local Government ,82,IP
+Kyegegwa - District Local Government ,Kyegegwa - District Local Government ,83,IP
+Kiryandongo - District Local Government ,Kiryandongo - District Local Government ,84,IP
+Moyo - District Local Government ,Moyo - District Local Government ,85,IP
+Yumbe - District Local Government ,Yumbe - District Local Government ,86,IP
+MSF-F,MSF-F,87,OP
+MSF-H,MSF-H,88,OP
+MSF-S,MSF-S,89,OP
+MSF-FR,MSF-FR,90,OP
+Raising Voices,RV,91,OP
+Catholic Organisation for Relief and Development Aid,CORDAID,92,OP
+Agency for Technical Cooperation and Development,ACTED,93,IP
+NO DATA,NO DATA,94,NO DATA
